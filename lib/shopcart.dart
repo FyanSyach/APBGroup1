@@ -70,7 +70,7 @@ class _shopcartState extends State<shopcart> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Anorak Jacket",
+                          "Anorak Jackett",
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20),
                         ),
