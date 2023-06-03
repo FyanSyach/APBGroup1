@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:homepage/constant/app_color.dart';
 import 'package:homepage/core/model/wishlistM.dart';
-import './shopcart.dart';
+import '../shopcart.dart';
 
 class wishlistTile extends StatelessWidget {
   final wishlistM data;

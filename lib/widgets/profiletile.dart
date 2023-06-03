@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'constant/app_color.dart';
-import './helpdesk.dart';
+import '../constant/app_color.dart';
+import '../helpdesk.dart';
 
 class MenuTileWidget extends StatelessWidget {
   final Widget icon;

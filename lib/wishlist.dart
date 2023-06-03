@@ -5,7 +5,7 @@ import 'package:homepage/constant/app_color.dart';
 import 'package:homepage/core/model/wishlistM.dart';
 import 'package:homepage/core/services/wishlistS.dart';
 import 'package:homepage/main.dart';
-import 'package:homepage/wishlisttile.dart';
+import 'package:homepage/widgets/wishlisttile.dart';
 
 class wishlist extends StatefulWidget {
   const wishlist({super.key});

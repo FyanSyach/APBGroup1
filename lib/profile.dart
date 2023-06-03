@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:homepage/Login.dart';
 import 'constant/app_color.dart';
-import 'package:homepage/profiletile.dart';
+import 'package:homepage/widgets/profiletile.dart';
 import './Login.dart';
 import './helpdesk.dart';
 import './wishlist.dart';

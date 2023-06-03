@@ -7,6 +7,9 @@ import './helpdesk.dart';
 import './barang.dart';
 import './profile.dart';
 import './shopcart.dart';
+import './search.dart';
+import './searchResult.dart';
+import './widgets/dSearch.dart';
 import './core/services/cartList.dart' as cartList;
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -50,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
     homepage(),
     wishlist(),
     profile(),
+    SearchPage(),
   ];
 
   final addScreen = [
@@ -73,17 +77,14 @@ class _MyHomePageState extends State<MyHomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Container(
-                width: 200.0,
-                child: TextField(
-                  decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.search),
-                    filled: true,
-                    fillColor: Color.fromARGB(242, 255, 255, 255),
-                    focusColor: Color(0xFF0E5E6F),
-                    labelText: 'Cari barang',
-                  ),
-                ),
+              DummySearchWidget(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => SearchPage(),
+                    ),
+                  );
+                },
               ),
               RawMaterialButton(
                 onPressed: () => showDialog<String>(
